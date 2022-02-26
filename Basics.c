@@ -47,7 +47,7 @@ int main(){
    long long int p = 779769997897898776; //%lld long long int
    printf("%lld\n",p);
 
-   unsigned long long int o = 779769997867878697789877776u;
+   unsigned long long int o = 7797699978678786977776u;
    printf("%llu\n",o); // %llu unsigned long long int
 
   
