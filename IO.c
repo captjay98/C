@@ -7,6 +7,8 @@ int main(){
 
   printf("What's your name?\n");
   fgets(name, 25, stdin);
+  // name[dtrlen(name)-1] = '\0';
+
   printf("My name is %s", name);
 
   printf("How old are you?\n");
