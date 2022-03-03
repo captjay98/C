@@ -78,6 +78,7 @@ int main(){
    printf("item 3: $%-8.2f\n", item3); //  %- left align 
 
 
+    //Maths
 
     int yt = 4;
     int xt = 3;
@@ -102,6 +103,76 @@ int main(){
    printf("%d\n", et);
    printf("%d\n", yt);
    printf("%d\n", xt);
+
+
+   double sq = sqrt(25); // Square Root of a Nmber
+    printf("Square root of 25 is %lf \n", sq);
+
+
+    double po = pow (2, 4); // 2 raised to the power of 4
+    printf("Raised to the power = %lf\n", po);
+
+    int ro = round(3.49); //Rounded
+    printf("rounded = %d\n", ro);
+
+    int ce = ceil(3.49); //Rounded up
+    printf("Rounded up = %d\n", ce);
+
+    int fl = floor(3.49); //Rounded down
+    printf("Rounded Down = %d\n", fl);
+
+    double fa = fabs(3.55); //Absolute Value
+    printf("Rounded to = %lf\n", fa);
+
+    double lo = log(3); //Logrithim
+    printf("log of 3 =%lf\n", lo);
+
+    double si = sin(45); // Sin of a number
+    printf("Sin of 45 = %lf\n", si);
+
+    double co = cos(45); //COs of a number
+    printf("cos of 45 = %lf\n", co);
+
+    double ta = tan(45); //Tan of a number
+    printf("tan of  = %lf\n", ta);
+
+    //Hypotenause Calculator
+
+    double hypo1;
+    double hypo2;
+    double hypo3;
+
+    printf("Enter Side A: ");
+    scanf("%lf", &hypo1);
+
+
+    printf("Enter Side B: ");
+    scanf("%lf", &hypo2);
+
+    hypo3 = sqrt(hypo1*hypo1 + hypo2*hypo2);
+
+    printf("Side C: %lf", hypo3);
+
+
+    //Age Checker    
+    
+    
+    int pers;
+
+    printf("\nHow old are you?");
+    scanf("%d", &pers);
+
+    if(pers >= 18){
+        printf("You have passed the age check\n");
+    }
+    else if(pers <5 ){
+        printf("You really should'nt be here\n");
+    }
+    else{
+        printf("You have failed the age check\n");
+    }
+
+
 
     return 0;
 }
