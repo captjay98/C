@@ -2,13 +2,15 @@
 
 int main(){
 
-    // A comment
-    /*
-      a ulti line comment
-    */
+  char name[25];
+  int age;
 
-    printf("I am Finally Learning C \n");
-    printf("And it is not as bad as I thought");
+  printf("What's your name?\n");
+  fgets(name, 25, stdin);
+  printf("My name is %s", name);
 
-    return 0;
+  printf("How old are you?\n");
+  scanf("%d", &age);
+  printf("I am %d years old.\n", age);
+  
 }

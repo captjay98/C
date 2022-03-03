@@ -50,9 +50,25 @@ int main(){
    unsigned long long int o = 7797699978678786977776u;
    printf("%llu\n",o); // %llu unsigned long long int
 
+   char namee[256];
+   int agee;
+
+
+    //inputs 
+    
+    printf("What's your name?\n");
+    fgets(namee, 25, stdin);
+   
+    printf("My name is %s\n", namee);
   
+  
+    printf("How old are you %s?\n", namee);
+    scanf("%d", &agee);
+
+    printf("I am %d years old\n", agee);
 
 
+  
    float item1 = 5.75;
    float item2 = 10.0;
    float item3 = 250.00;

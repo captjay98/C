@@ -2,6 +2,8 @@
 
 
 int main() {
+
+    printf("Farenheit--Celsius Printer\n");
     int lower, upper, step;
     float fahr, celsius;
     lower = 0;
@@ -15,6 +17,8 @@ int main() {
         printf("%4.0f %6.1f\n", fahr, celsius);
         fahr = fahr + step;
     }
+
+    printf("This is the End of the loop\n");
 
     return 0;
 }
