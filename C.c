@@ -24,7 +24,7 @@ int main(){
         printf("\nThe temp in Celcius is: %.1f", temp);
     }
     else{
-        printf(" %c is incorrect, Enter an Appropiate Unit please.", unit);
+        printf(" %c is incorrect,Enter an Appropiate Unit please.", unit);
     }
 
 
