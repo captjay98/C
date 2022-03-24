@@ -132,40 +132,5 @@ int main(void)
         
 	}
 
-
-
- /*if (inpunit =='C'){
-        printf("Enter the Temperature in Celsius\n");
-        scanf("%d", &temp);
-        temp = (temp * 9 / 5) + 32;
-        printf("\nThe temp in Farenheit is:%.1f", temp);
-    }
-    else if (inpunit =='F'){
-        printf("Enter the Temperature in Farenheit\n");
-        scanf("%d", &temp);
-        temp = ((temp - 32) * 5) / 9;
-        printf("\nThe temp in Celcius is: %.1f", temp);
-    }
-
- 
-	if (inpunit =='C')
-	{
-		printf("Enter the Temperature in Celsius\n");
-        
-		temp = (temp * 9 / 5) + 32;
-        
-		printf("\nThe temp in Farenheit is:%.1f", temp);
-	}
-
-    
-	else if (inpunit =='F'){
-        
-		printf("Enter the Temperature in Farenheit\n");
-        
-		temp = ((temp - 32) * 5) / 9;
-        
-		printf("\nThe temp in Celcius is: %.1f", temp);
-	}
-*/
 	return (0);
 }
