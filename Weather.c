@@ -42,7 +42,7 @@ int main(void)
 	{
 		printf("Enter Temperature in Farenheit:-");
 		scanf("%d", &tempFC);
-		tempFC = ((tempFC - 32.0) * 5.0 / 9.0);
+		tempFC = (tempFC - 32.0) * 5.0 / 9.0;
 
 		if (tempFC >=30)
 		{
