@@ -5,27 +5,23 @@
 #include "practice.h"
 int farenheit(int z)
 	{
-		int tempF;
-		tempF = z;
-		return tempF;
+		return z;
 	}
 
 int celcius(int x)
 	{
-		int tempC;
-		tempC = x;
-		return tempC;
+		return x;
 	}
 
 
 
 int main(void)
 {
-	int temF, temC, temFC, temCF;
+	int tempF, tempC, tempFC, tempCF;
 	char inpunit, outunit;
 	
 
-	printf("Enter Input and Output Unit Please\n");
+	puts("Enter Input and Output Unit Please\n");
 	scanf("%c %c", &inpunit, &outunit);
 	printf("%c %c Selected unit\n",inpunit, outunit);
 	inpunit = toupper(inpunit);
@@ -35,22 +31,22 @@ int main(void)
 	if (inpunit == 'F' && outunit == 'F')
 	{
 		printf("Enter Temperature in Farenheit:-");
-		scanf("%d", &temF);
-		temF = farenheit(temF);
+		scanf("%d", &tempF);
+		tempF = farenheit(tempF);
 
-		if (temF >= 88)
+		if (tempF >= 88)
 		{
-			printf("It is %d in Farenheit\n", temF);
+			printf("It is %d in Farenheit\n", tempF);
 		    printf("It's a Hot Day, Stay Hydrated");
 		}
-		else if (temF >= 69)
+		else if (tempF >= 69)
 		{
-		    printf("It is %d in Farenheit\n", temF);
+		    printf("It is %d in Farenheit\n", tempF);
 			printf("It's a Nice Day, Enjoy!");
 		}
-		else if (temF < 69)
+		else if (tempF < 69)
 		{
-		    printf("It is %d in Farenheit\n", temF);
+		    printf("It is %d in Farenheit\n", tempF);
 			printf("It is chilly Today, Stay Warm!");
 		}
 	}
@@ -58,22 +54,22 @@ int main(void)
 	else if (inpunit == 'F' && outunit == 'C')
 	{
 		printf("Enter Temperature in Farenheit:-");
-		scanf("%d", &temFC);
-		temFC = Far2Cel(temFC);
+		scanf("%d", &tempFC);
+		tempFC = Far2Cel(tempFC);
 
-		if (temFC >=30)
+		if (tempFC >=30)
 		{
-		    printf("It is %d degrees in Celcius", temFC);
+		    printf("It is %d degrees in Celcius", tempFC);
 			printf("It's a Hot Day, Stay Hydrated");
 		}
-		else if (temFC >= 20)
+		else if (tempFC >= 20)
 		 {
-		    printf("It is %d degrees in Celcius", temFC);
+		    printf("It is %d degrees in Celcius", tempFC);
 			printf("It's a Nice Day, Enjoy!");
 		 }
-		else if (temFC <20)
+		else if (tempFC <20)
         {
-		    printf("It is %d degrees in Celcius", temFC);
+		    printf("It is %d degrees in Celcius", tempFC);
 			printf("It is chilly Today, Stay Warm!");
 		}
 
@@ -82,22 +78,22 @@ int main(void)
 	else if (inpunit == 'C' && outunit == 'C')
 	{
 		printf("Enter Temperature in Celcius:-");
-		scanf("%d", &temC);
-		temC = celcius(temC);
+		scanf("%d", &tempC);
+		tempC = celcius(tempC);
 
-        if (temC >=30)
+        if (tempC >=30)
 		{
-		    printf("It is %d degrees in Celcius\n", temC);
+		    printf("It is %d degrees in Celcius\n", tempC);
 			printf("It's a Hot Day, Stay Hydrated");
 		}
-		else if (temC >= 20)
+		else if (tempC >= 20)
 		 {
-		    printf("It is %d degrees in Celcius\n", temC);
+		    printf("It is %d degrees in Celcius\n", tempC);
 			printf("It's a Nice Day, Enjoy!");
 		 }
-		else if (temC <20)
+		else if (tempC <20)
         {
-		    printf("It is %d degrees in Celcius", temC);
+		    printf("It is %d degrees in Celcius", tempC);
 			printf("It is chilly Today, Stay Warm!");
 		}
 	}
@@ -105,22 +101,22 @@ int main(void)
 	else if (inpunit == 'C'&& outunit == 'F')
 	{
 		printf("Enter Temperature in celcius:-");
-		scanf("%d", &temCF);
-		temCF = Cel2Far(temCF);
+		scanf("%d", &tempCF);
+		tempCF = Cel2Far(tempCF);
         
-        if (temCF >= 88)
+        if (tempCF >= 88)
 		{
-			printf("It is %d in Farenheit\n", temCF);
+			printf("It is %d in Farenheit\n", tempCF);
 		    printf("It's a Hot Day, Stay Hydrated");
 		}
-		else if (temCF >= 69)
+		else if (tempCF >= 69)
 		{
-		    printf("It is %d in Farenheit\n", temCF);
+		    printf("It is %d in Farenheit\n", tempCF);
 			printf("It's a Nice Day, Enjoy!");
 		}
-		else if (temCF < 69)
+		else if (tempCF < 69)
 		{
-		    printf("It is %d in Farenheit\n", temCF);
+		    printf("It is %d in Farenheit\n", tempCF);
 			printf("It is chilly Today, Stay Warm!");
 		}
 	}
