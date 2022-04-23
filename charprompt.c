@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <ctype.h>
+#include "practice.h"
 
-char charprompt(char *prompt, char C, char F)
+char charprompt(char *prompt, char iC, char iF)
 {
     char input;
     input=toupper(input);
@@ -13,14 +14,28 @@ char charprompt(char *prompt, char C, char F)
         input=toupper(input);
         getchar();
 
-        if (input < C) printf("Enter Either %c or %c\n", C, F);
+        switch (input)
+        {
+            case 'C':
+            return 'C';
+            break;
 
-        if (input > F) printf("Enter Either %c or %c\n", C, F);
+            case 'F':
+            return 'F';
+            break;
 
-    } while (input < C || input > F);
+            default:
+            puts("Invalid Input, Enter either C or F.");
+
+        }
+
+        
+    } while (input != iC || input != iF);
     return input;
 }
 
+
+/*
 
 int main()
 {
@@ -33,3 +48,5 @@ int main()
     return 0;
 
 }
+
+*/
