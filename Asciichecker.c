@@ -10,9 +10,9 @@ int charprompt(char *prompt, int min, int max)
         puts(prompt);
         scanf("%c", &input);
     
-        if (input < min) printf("Can't be less than%c\n", min);
+        if (input < min) printf("Invalid Character, Too Low %c\n", min);
 
-        if (input > max) printf("Enter be more than%c\n", max);
+        if (input > max) printf("Invalid character, Too High %c\n", max);
 
     } while (input < min || input > max);
     return input;
