@@ -6,18 +6,18 @@ int main(void)
 
     int i, n, nt;
 
-    puts("Num    Times2");
+    puts("Num    Squared");
     puts("___    ______");
 
 
-    for ( i = 0; i <=10; i++)
+    for ( i = 1; i <=10; i++)
 
     {
         n +=1;
-        nt = n *2;
+        nt = n * n;
 
     
-    printf(" %2i      %2i\n",n, nt);
+    printf("%2i      %3i\n",n, nt);
     }
 return 0;
     
