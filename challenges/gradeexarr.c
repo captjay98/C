@@ -32,8 +32,11 @@ int main(void)
     }
     average = (float) sum / numberofGrades;
 
-    for ( i = 1; i <= 5; i++)
-         printf("%4i%14i\n", i, gradetotal[i]);
+     puts("\n\nNo   Grade");
+    puts("===========\n");
+
+    for ( i = 1; i <= numberofGrades; i++)
+         printf("%2i%6i\n", i, gradetotal[i]);
 
     printf("Average = %.2f \n", average);
     printf("Failures = %i\n", failurecount);
