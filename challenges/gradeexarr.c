@@ -32,7 +32,7 @@ int main(void)
     }
     average = (float) sum / numberofGrades;
 
-     puts("\n\nNo   Grade");
+    puts("\nNo   Grade");
     puts("===========\n");
 
     for ( i = 1; i <= numberofGrades; i++)
