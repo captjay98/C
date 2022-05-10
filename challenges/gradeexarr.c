@@ -3,7 +3,7 @@
 int main(void)
 {
     int numberofGrades , i, grade, sum = 0;
-    int gradetotal[5];
+    int gradetotal[6];
     int failurecount = 0;
     float average;
     
