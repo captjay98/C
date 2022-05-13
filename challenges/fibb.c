@@ -2,14 +2,22 @@
 
 int main (void)
 {
-     int Fib, Fib1 = 1, Fib2 = 2, i;
+     int Num, i;
+     unsigned long long int Fib, Fib1 = 0, Fib2 = 1;
 
-     for ( i = 0;  i < 15;  ++i )
+     puts("Enter Number of Fibs you want to find");
+     scanf("%i", &Num);
+
+     printf("Fib 1 = %llu\nFib 2 = %llu\n", Fib1, Fib2);
+
+     for ( i = 2;  i <=Num;  ++i )
      {	
       	  Fib = Fib1 + Fib2;
-          printf ("Fib  = %i\n", Fib);
-	  ++Fib1;
-	  ++Fib2;
+          printf ("Fib %i  = %llu\n",i+1, Fib);
+
+	  Fib1 = Fib2;
+
+	  Fib2 = Fib;
      }
 
      return 0;
