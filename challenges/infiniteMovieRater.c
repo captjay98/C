@@ -2,7 +2,7 @@
 
 //Movie rater
 
-//Enter 999 to stop taking inout and display results
+//Enter 999 to stop taking input and display results
 
 int main(void)
 {
