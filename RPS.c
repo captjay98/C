@@ -44,11 +44,11 @@ int main(void)
              else puts("Type one of R, P, S or Q");
         }
 
-        if (playerMove == 'R') puts("ROCK versus");
+        if (playerMove == 'R') puts("ROCK \n vs");
 
-        else if (playerMove == 'P') puts("PAPER versus");
+        else if (playerMove == 'P') puts("PAPER \n vs");
 
-        else if (playerMove == 'S') puts("SCISSORS versus");
+        else if (playerMove == 'S') puts("SCISSORS \n vs");
 
 
         if (coin == 0)
