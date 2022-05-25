@@ -19,16 +19,17 @@ int main(void)
 
     while (status)
     {
-        printf("| Ties = %i | Wins = %i | Losses %i | \n", tie, win, loss);
+        printf("\n| Ties = %i | Wins = %i | Losses %i | \n\n", tie, win, loss);
         coin = makeRand();
 
         while (status)
         {
-             puts("Your Move: (R)ock (P)aper (S)cissors");
+             puts("Your Move: (R)ock (P)aper (S)cissors\n");
 
              scanf("%c", &playerMove);
              playerMove = toupper(playerMove);
              getchar();
+	      puts("\n");
 
             
 
@@ -41,7 +42,7 @@ int main(void)
              {
                  break;
              }
-             else puts("Type one of R, P, S or Q");
+             else puts("Enter R, P, S or Q\n");
         }
 
         if (playerMove == 'R') puts("ROCK \n vs");
