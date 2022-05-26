@@ -22,12 +22,25 @@ int main()
 {
     double score;
     
-    score =Scorer("Enter Sore:=", 0, 100);
+    score = Scorer("Enter Sore:=", 0, 100);
       
-    printf("Score is = %.2lf\n", score);
+  
+    if (score >= 90) printf("Score is %.2lf and your grade is A+", score);
 
-    //double total = sqrt(pow(x,2) + pow(y,2));
+    else if (score >= 80) printf("Score is %.2lf and your grade is A", score);
+
+    else if (score >= 70) printf("Score is %.2lf and your grade is B", score);
+
+    else if (score >= 60) printf("Score is %.2lf and your grade is C", score);
+
+    else if (score >= 50) printf("Score is %.2lf and your grade is D", score);
+
+    else if (score  < 50) printf("Score is %.2lf ad your grade is F", score);
+
+    else puts("Invalid Input");
     
+
+
     return 0;
 
 }

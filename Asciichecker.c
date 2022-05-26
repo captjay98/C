@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <ctype.h>
 
-int charprompt(char *prompt, int min, int max)
+int AsciiChecker(char *prompt)
 {
     char input;
 
@@ -9,22 +9,16 @@ int charprompt(char *prompt, int min, int max)
     {
         puts(prompt);
         scanf("%c", &input);
-    
-        if (input < min) printf("Can't be less than%c\n", min);
 
-        if (input > max) printf("Enter be more than%c\n", max);
-
-    } while (input < min || input > max);
+    } while (!input);
     return input;
 }
 
-
 int main()
 {
-    char ch = charprompt("Enter Character or Digit\n", 32, 128);
+    char ch = AsciiChecker("Enter Character or Digit\n");
 
     printf("Character = %c is Number = %d\n", ch, ch);
 
     return 0;
-
 }
