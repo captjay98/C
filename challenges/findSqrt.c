@@ -29,6 +29,12 @@ float sqroot(float val)
     const float epsilon = 0.0001;
     float guess = 1.0;
 
+    if (val < 0)
+    {
+        puts("Negative num\n");
+        return - 1.0;
+    }
+
     while (absVal(guess * guess - val) >= epsilon)
         guess = (val / guess + guess) / 2.0;
 
