@@ -1,19 +1,19 @@
 #include <stdio.h>
 
 float absVal(float val);
-float sqroot(float val);
+double sqroot(double val);
 
 int main(void)
 
 {
     puts("Enter Number: ");
 
-    float y;
-    scanf("%f", &y);
+    double y;
+    scanf("%lf", &y);
 
     double x = sqroot(y);
 
-    printf("Squareroot of %.2f = %.5lf ", y, x);
+    printf("Square root of %.2f = %.5lf ", y, x);
 
 }
 
@@ -24,12 +24,17 @@ float absVal(float val)
     return val;
 }
 
-float sqroot(float val)
+double sqroot(double val)
+	
 {
-    float epsilon;
-    float guess = 1.0;
+    double epsilon;
+    double guess;
+
+    puts("Enter Guess");
+    scanf("%lf", &guess);
+
     puts("Enter epsilon");
-    scanf("%f)", &epsilon);
+    scanf("%lf)", &epsilon);
 
     if (val < 0)
     {
@@ -37,8 +42,12 @@ float sqroot(float val)
         return - 1.0;
     }
 
+    int i = 1;
     while (absVal(guess * guess - val) >= epsilon)
-        guess = (val / guess + guess) / 2.0;
-
+    {
+	guess = (val / guess + guess) / 2.0;
+    	printf("Guess [%i] = %F\n",i, guess);
+	    i++;
+    }
     return guess;
 }
