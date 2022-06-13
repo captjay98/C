@@ -25,10 +25,11 @@ int main()
 
 		intarr[indexNum] = numEntered;
 
-		totalEntered += intarr[indexNum];
+		numEntered += intarr[indexNum];
+		totalEntered++;
 	}
 
-	for(indexNum = 1; indexNum < 6; indexNum++)
+	for(indexNum = 1; indexNum < totalEntered; indexNum++)
 	{
 		printf("Num at index[%i] = %i\n", indexNum, intarr[indexNum]);
 	}
