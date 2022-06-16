@@ -13,7 +13,6 @@ int main(void)
     int arr[16] = { 34, -5, 6, 0, 12, 100, 56, 22, 44, -3, -9, 12, 17, 22, 6, 11 };
 
 
-
     puts("Before Sorting:\n");
 
     for (i = 0; i < 16; i++)
@@ -23,10 +22,8 @@ int main(void)
     puts("\n");
 
     puts("Enter A for Ascending & D for ascending order");
-    
     scanf("%c", &op);
     op = toupper(op);
-
 
     sortArryAsc(arr, 16, op);
 
@@ -77,7 +74,7 @@ void sortArryAsc(int a[], int n, char option)
         }
     }
 
-    else if  ((option != 1) || (option != 2))
+    else if  ((option != 'A') || (option != 'D'))
     {
         puts("Don't be Stupid");
     }
