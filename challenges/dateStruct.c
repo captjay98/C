@@ -28,6 +28,7 @@ int main()
     return 0;
 }
 
+/*
 struct date dateUpdate(struct date today)
 {
     
@@ -49,7 +50,23 @@ struct date dateUpdate(struct date today)
      }
 
     return tomorrow;
+}*/
+
+// Function to calculate tomorrow's date – using compound literals
+
+struct date dateUpdate(struct date today)
+{
+    if ( today.day != numberOfDays (today) )
+        tomorrow = (struct date) { today.month, today.day + 1,
+today.year };
+    else if ( today.month == 12 )      // end of year
+        tomorrow = (struct date) { 1, 1, today.year + 1 };
+    else                              // end of month
+        tomorrow = (struct date) { today.month + 1, 1,
+today.year };
+    return tomorrow;
 }
+
 
 int numberOfDays(struct date d)
 {
