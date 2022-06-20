@@ -25,8 +25,8 @@ int main()
 	//game.quit = 0;
 	
 	char guessWords[][16] ={
-		"Ubuntu",
-		"Windows",
+		"ubuntu",
+		"windows",
 		"android",
 		"ios",
 		"symbian",
@@ -53,6 +53,31 @@ int main()
     puts("\n***HANGMAN***\n");
 	puts("TIP! Name of Popular Operating Systems\n");
 
+	if (randIndex == 0)
+	{
+		puts("A popular Open Source OS");
+	}
+	if (randIndex == 1)
+	{
+		puts("The most Widely Used PC operating System");
+	}
+	if (randIndex == 2)
+	{
+		puts("The most widely used Mobile operating System");
+	}
+	if (randIndex == 3)
+	{
+		puts("A tightly closed Operating system");
+	}
+	if (randIndex == 4)
+	{
+		puts("Used to power Nokia");
+	}
+	if (randIndex == 5)
+	{
+		puts("Most popular Feature Phone Operating system");
+	}
+
 	while ( game.numCorrect < lenghtOfWord)
 	{
        
@@ -76,7 +101,7 @@ int main()
 		}
 
 
-		printf("Number correct so Far = %i\n", game.numCorrect);
+		printf("\nNumber correct so Far = %i\n", game.numCorrect);
 		puts("Guess a Letter\n");
 		fgets(guess, 16, stdin);
 
