@@ -15,15 +15,14 @@ int numberOfDays(struct date d);
 bool isLeapYear(struct date d);
 struct date dateUpdate(struct date today);
 
-
 int main()
 {
-    puts("Enter today's date in Day Month Year Format ");
-    scanf("%i%i%i", &thisDay.day, &thisDay.month, &thisDay.year);
+    puts("Enter today's date in Day-Month-Year Format ");
+    scanf("%i-%i-%i", &thisDay.day, &thisDay.month, &thisDay.year);
     
     nextDay = dateUpdate(thisDay);
 
-    printf ("Tomorrow's date is %i-%i-%.2i.\n", nextDay.day, nextDay.month, nextDay.year);
+    printf ("Tomorrow's date is %.2i-%.2i-%.2i\n", nextDay.day, nextDay.month, nextDay.year);
 
     return 0;
 }
@@ -57,21 +56,19 @@ struct date dateUpdate(struct date today)
 struct date dateUpdate(struct date today)
 {
     if ( today.day != numberOfDays (today) )
-        tomorrow = (struct date) { today.month, today.day + 1,
+        tomorrow = (struct date) { today.day + 1, today.month,
 today.year };
     else if ( today.month == 12 )      // end of year
         tomorrow = (struct date) { 1, 1, today.year + 1 };
     else                              // end of month
-        tomorrow = (struct date) { today.month + 1, 1,
+        tomorrow = (struct date) { 1, today.month + 1,
 today.year };
     return tomorrow;
 }
 
-
 int numberOfDays(struct date d)
 {
     int days;
-    bool isLeapYear(struct date d);
     const int daysPerMonth[13] = 
      { 0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
 
@@ -87,7 +84,7 @@ bool isLeapYear(struct date d)
 {
     bool leapYearFlag;
 
-    if( (d.year %4 == 0 && d.year % 100 != 0) || (d.year % 400 == 0 ))
+    if( (d.year % 4 == 0 && d.year % 100 != 0) || (d.year % 400 == 0 ))
     {
         leapYearFlag = true;
     }
