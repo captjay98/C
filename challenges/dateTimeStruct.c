@@ -28,9 +28,10 @@ struct date
 
 struct time
     {
-        int seconds;
-        int minutes;
         int hours;
+        int minutes;
+        int seconds;
+        
     };
 
 struct dateAndTime
@@ -44,12 +45,15 @@ struct dateAndTime events;
 
 int main(void)
 {
-    events.sdate.day = 1;
+
+    struct dateAndTime  events = { { 9, 12, 2015 }, { 06, 30, 55 } };
+
+    /*events.sdate.day = 1;
     events.sdate.month = 2;
     events.sdate.year = 2015;
 
     events.stime = (struct time) {.hours = 3, .minutes = 30, .seconds = 0 };
-
+*/
     printf(" The event date is %i:%i:%i\n", events.sdate.day,
             events.sdate.month, events.sdate.year);
 
