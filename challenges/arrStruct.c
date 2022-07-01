@@ -7,6 +7,15 @@ struct time
     int seconds;
 };
 
+/*
+static struct time runTime[5] = { [1].hour = 12, [1].minutes =
+30 };
+
+struct time runTime[5] = { [2] = {12, 0, 0} };
+
+struct time  runTime[5] = { 12, 0, 0, 12, 30, 0, 13, 15, 0 };
+*/
+
 struct time timeUpdate(struct time now);
 
 int main(void)
