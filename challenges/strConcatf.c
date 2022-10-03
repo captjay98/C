@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-
 void concat(char result[], const char str1[],
         const char str2[], const char str5[]);
 
@@ -13,10 +12,7 @@ int main(void)
 
     concat(s3, s1, s2, s5);
 
-    
     printf("%s", s3);
-    
-    puts("\n");
 
     return 0;
 }

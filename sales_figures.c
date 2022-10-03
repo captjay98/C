@@ -9,11 +9,6 @@ int main()
     double average = 0.0;
     int total = 0, day1_total, day2_total, day3_total;
 
-    puts("Enter the number of sales for day 1: \n");
-    scanf("%i", &NoS1);
-    getchar();
-    puts("Enter day 1 Sales: \n");
-    day1_total = dayx(NoS1);
 
     puts("Enter the number of sales for day 2: \n");
     scanf("%i", &NoS2);
@@ -40,11 +35,19 @@ int dayx(int n)
     for (int i = 0; i < n; i++)
     {
         scanf("%i", &input);
-
         day[i] = input;
         printf("day 1 sale[%i] = %i\n", i+1, day[i]);
         total += day[i];
     }
-    printf("day total = %i\n", total);
+    printf("day total = %i\n\n", total);
     return total;
+}
+
+int tot(void)
+{
+    puts("Enter the number of sales for day 1: \n");
+    scanf("%i", &NoS1);
+    getchar();
+    puts("Enter day 1 Sales: \n");
+    day1_total = dayx(NoS1);
 }

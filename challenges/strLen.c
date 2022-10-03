@@ -22,3 +22,11 @@ int strLen(const char string[])
     }
     return len;
 }
+
+int  stringLength (const char  *string)
+{
+     const char  *cptr = string;
+     while ( *cptr )
+        ++cptr;
+    return  cptr - string;
+}
